@@ -28,7 +28,6 @@ app.get("/", (req, res) => {
 app.use("/campaings", jsonParser, campaingsRouter);
 app.use("/phone", jsonParser, urlencodedParser, productRouter);
 app.use("/clothing", jsonParser, urlencodedParser, productClothingRouter);
-app.use("/clothi2222ng", jsonParser, urlencodedParser, productClothingRouter);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
