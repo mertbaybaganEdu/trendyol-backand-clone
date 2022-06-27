@@ -13,7 +13,7 @@ const productClothingRouter = require("./routers/Products/productsClothingRouter
 app.use(bodyParser.json({ type: "application/*+json" }));
 
 mongoose.connect(
-  `mongodb+srv://${process.env.MONGODB_NAME}:${process.env.MONGODB_PASSWORD}@trendyoldb.ycsujx8.mongodb.net/?retryWrites=true&w=majority`,
+  `mongodb+srv://TrendyolDB:6QrB4d9FLA4gZfBE@trendyoldb.ycsujx8.mongodb.net/?retryWrites=true&w=majority`,
   (e) => {
     if (e) {
       console.log(e);
